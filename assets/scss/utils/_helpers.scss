@@ -1,0 +1,182 @@
+// 文字尺寸
+$font-sizes: (
+  128: 128px,
+  64: 64px,
+  24: 24px,
+  20: 20px
+);
+
+@each $key, $val in $font-sizes {
+  .fs-#{$key} {
+    font-size: #{$val}
+  }
+}
+
+// 文字顏色
+$font-colors: (
+  primary: #00ffa3,
+  dark: #000,
+  light-dark: #15161D,
+  white: #fff,
+  light-white: #D1D1D1,
+);
+
+@each $key, $val in $font-colors {
+  .text-#{$key} {
+    color: #{$val}
+  }
+}
+
+// 背景顏色
+$background-colors: (
+  dark: #000,
+  white: #fff,
+  linear-blue: linear-gradient(180deg, #050014 0%, rgba(1, 2, 30, 0.89) 100%)
+);
+
+@each $key, $val in $background-colors {
+  .bg-#{$key} {
+    background: #{$val}
+  }
+}
+
+// 間距
+$spacer: (
+  160: 160px,
+  96: 96px,
+  72: 72px,
+  40: 40px,
+  36: 36px,
+  32: 32px,
+  24: 24px,
+  16: 16px,
+  auto: auto
+);
+
+@each $prop, $abbr in (margin: m, padding: p) {
+  @each $key, $val in $spacer {
+    .#{$abbr}-#{$key} {
+      #{$prop}: #{$val}
+    }
+  }
+
+  @each $key, $val in $spacer {
+    .#{$abbr}t-#{$key} {
+      #{$prop}-top: #{$val}
+    }
+  }
+
+  @each $key, $val in $spacer {
+    .#{$abbr}b-#{$key} {
+      #{$prop}-bottom: #{$val}
+    }
+  }
+
+  @each $key, $val in $spacer {
+    .#{$abbr}s-#{$key} {
+      #{$prop}-left: #{$val}
+    }
+  }
+
+  @each $key, $val in $spacer {
+    .#{$abbr}e-#{$key} {
+      #{$prop}-right: #{$val}
+    }
+  }
+
+  @each $key, $val in $spacer {
+    .#{$abbr}x-#{$key} {
+      #{$prop}-right: #{$val};
+      #{$prop}-left: #{$val}
+    }
+  }
+
+  @each $key, $val in $spacer {
+    .#{$abbr}y-#{$key} {
+      #{$prop}-top: #{$val};
+      #{$prop}-bottom: #{$val}
+    }
+  }
+}
+
+// Flex Box
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+// gap 距離
+$gap: (
+  24: 24px,
+  16: 16px,
+  4: 4px
+);
+
+@each $key,$val in $gap {
+  .gap-#{$key} {
+    gap: #{$val};
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

@@ -1,0 +1,49 @@
+// navbar hover 樣式
+.navbar a:hover {
+  color: #00FFA3;
+}
+
+// intro 背景圖案
+.bg-intro {
+  background-image: url("../assets/images/background-img.png");
+}
+
+// 關於我樣式
+.about {
+
+  &__skill li {
+    max-width: 306px;
+    border: 1px solid #E3E3E3;
+  }
+
+  &__content {
+    max-width: 526px;
+  }
+}
+
+// 我的連結樣式
+.contact {
+
+  &__social img {
+    max-width: 162px;
+    max-height: 162px;
+  }
+
+  .material-icons {
+    font-size: 100px;
+  }
+}
+
+
+// Side Project 樣式
+.project {
+
+  h2 {
+    max-width: 746px;
+  }
+
+  &__card {
+    margin-bottom: 28px;
+  }
+  
+}
