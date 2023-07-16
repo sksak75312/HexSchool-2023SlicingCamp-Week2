@@ -803,6 +803,10 @@ a {
   gap: 24px;
 }
 
+.gap-20 {
+  gap: 20px;
+}
+
 .gap-16 {
   gap: 16px;
 }
@@ -865,8 +869,14 @@ a {
 }
 
 .contact__social img {
-  max-width: 162px;
-  max-height: 162px;
+  width: 162px;
+  height: 162px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 40px;
+}
+.contact__social img:hover {
+  box-shadow: 0px 0px 16px 3px rgba(144, 148, 255, 0.9), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .contact .material-icons {
   font-size: 100px;
